@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts/font.css">
+
+    <title>Calculateur de taille de position Boom et Crash</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="calc-container">
+                <h1>CALCULATEUR DE POSITION INDICES SYNTHETIQUES</h1>
+                <div class="left-and-right">
+                    <div class="left">
+                        <span>Informations relatives à l’actif</span>
+                        <div class="form-container">
+                            <form action="#" class="form">
+
+                                <div class="input-form">
+                                    <input type="number" id="prix-entree" placeholder="Prix d’entrée" required>
+                                </div>
+
+                                <div class="input-form">
+                                    <input type="number" id="prix-sl" placeholder="Prix du stop loss" required>
+                                </div>
+                                
+                                <div class="input-form">
+                                    <input type="number" id="prix-perte" placeholder="Montant perte en $" required>
+                                </div>
+                                <button type="button" class="btn" id="btn">Estimer</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <span>Résultats relatif à l’actif : <b class="actif-text"></b> </span>
+                        <span>Lot minimum de l’actif: <b class="lot-minimum"></b></span>
+                        <span>Type d'ordre : <b class="type-ordre"></b> </span>
+                        <span>Lot recommandé pour cette perte en $ : <b class="lot-recommande"></b></span>
+                        <span>RRR de la postion: <b class="rrr"></b></span>
+                    </div>
+                </div>
+            </div>
+            <div class="credit-container">
+                <h2>By Costany Kandza & Kani Bouebassihou</h2>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
