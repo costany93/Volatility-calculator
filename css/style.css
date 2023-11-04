@@ -11,6 +11,7 @@ body{
     overflow: hidden;
 }
 
+
 .container {
     position: relative;
     display: block;
@@ -39,6 +40,7 @@ body{
     transform: translate(-50%, -50%);
     width: 85vw;
 }
+
 
 .calc-container {
     min-height: 70vh;
@@ -184,3 +186,23 @@ body{
     background: #06d6fa;
     transition: width linear 0.3s;
 }
+
+
+
+@media screen and (max-width: 480px) {
+    .left{
+        width: 100%;
+    }
+    .right{
+        margin-top: 15%;
+        width: 100%;
+    }
+    .left-and-right {
+        position: relative;
+        display: block;
+    }
+    .left-and-right::after {
+        content: '';
+        width: 0px;
+    }
+  }
